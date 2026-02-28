@@ -7,9 +7,9 @@ import tkinter as tk
 import platform
 import sys
 
-if platform.system() != "Windows":
-    print("This Resource Monitor Console only works on Windows.")
-    sys.exit()
+# Resource Monitor Console
+# You are free to modify this code for your own use or for other operating systems.
+# You do not need my permission, but please give credit if you share it.
 
 root = tk.Tk()
 root.title("Resource Monitor Console")
@@ -74,4 +74,5 @@ def update_stats():
     root.after(1203, update_stats)
 
 update_stats()
+
 root.mainloop()
